@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .parent {
+      border: 1px solid #333;
+      padding: 20px;
+    }
+
+    .child {
+      opacity: 0;
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #f0f0f0;
+      transition: opacity 0.5s ease; /* Add a smooth transition for opacity */
+    }
+
+    .visible {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <button onclick="toggleChild()">Toggle Child</button>
+
+  <div class="parent">
+    <p>This is the parent div.</p>
+    <div id="childDiv" class="child">
+      <!-- Content of the child div -->
+      This is the child div.
+    </div>
+  </div>
+
+  <script>
+    function toggleChild() {
+      var childDiv = document.getElementById('childDiv');
+      childDiv.classList.toggle('visible');
+    }
+  </script>
+
+</body>
+</html>

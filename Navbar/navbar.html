@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+
+    <div class="container">
+
+      <div class="navbar">
+           
+
+
+
+        <div class="img">
+
+
+        </div>
+
+
+     
+
+
+
+
+
+
+      </div>
+
+      <div class="navigation">
+
+
+
+        <ul>
+            <li><a href="#" >About Us</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#" id="clicked">Contact
+
+                <div  class="popup">
+                    <div id="popupdiv" class="popup1">
+                   <ul>
+                      <li><a href="">Email</a></li>
+                      <li>Contact number</li>
+                   </ul>
+   
+               </div>
+   
+                </div>
+   
+            </a></li>
+            
+        </ul>
+    </div>
+
+
+    </div>
+
+
+    <script>
+          
+function OnClick(){
+    var toggle1 = document.getElementById('popupdiv');
+    
+
+    toggle1.classList.toggle('vissible');
+
+}
+
+document.getElementById('clicked'),addEventListener('click',OnClick);
+
+
+
+
+    </script>
+    
+</body>
+</html>
